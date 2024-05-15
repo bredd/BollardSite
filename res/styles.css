@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+}
+
+:root {
+    --content-max-width: 920px;
+    --color-img-title: #2288bb;
+    --color-date-box: #bbbbbb;
+    --color-date: white;
+    --color-footer-box: #eeeeee;
+    --color-link: #2288bb;
+    font: normal normal 18px 'Open Sans';
+    color: #444444;
+}
+
+header {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: bottom;
+}
+
+header h1 {
+    display: block;
+    font: normal normal 2.5em Montserrat;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .2);
+}
+
+header a {
+    color: inherit;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+article {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+}
+
+article .date {
+    font: normal normal 0.8em Montserrat;
+    background-color: var(--color-date-box);
+    color: var(--color-date);
+    padding: 0.4em;
+    letter-spacing: 3px;
+}
+
+article h2 {
+    color: var(--color-img-title);
+    font: normal normal 1.5em Montserrat;
+    margin: 0.75em 0;
+}
+
+.article-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-row img {
+    display: inline-block;
+    padding: 4px;
+    background: white;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 0px 8px black;
+}
+
+.article-prev {
+    display: block;
+    position: relative;
+}
+
+.article-prev:hover::after {
+    display: inline-block;
+    position: absolute;
+    width: 6em;
+    left: -2.5em;
+    top: -2.5em;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    content: "Prev Bollard";
+}
+
+.article-next {
+    display: block;
+    position: relative;
+}
+
+.article-next:hover::after {
+    display: inline-block;
+    position: absolute;
+    width: 6em;
+    left: -3.5em;
+    top: -2.5em;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    content: "Next Bollard";
+}
+
+.article-footer {
+    background-color: var(--color-footer-box);
+    margin: 15px 0;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: inherit;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.share-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(share_buttons_20_3.png) no-repeat left !important;
+    background-position: -20px 0 !important;
+    position: relative;
+    top: 4px;
+}
+
+.share-button:hover {
+    background-position-y: -20px !important;
+}
+
+.share-button span {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -2.5em;
+    left: -5em;
+    width: 10em;
+}
+
+.share-button:hover span {
+    visibility: visible;
+}
+
+.share-email {
+    background-position: 0 0 !important;
+}
+
+.share-blogger {
+    background-position: -20px 0 !important;
+}
+
+.share-x {
+    background-position: -40px 0 !important;
+}
+
+.share-facebook {
+    background-position: -60px 0 !important;
+}
+
+.share-instagram {
+    background-position: -80px 0 !important;
+}
+
+.share-pinterest {
+    background-position: -100px 0 !important;
+}
