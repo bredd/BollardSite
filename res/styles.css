@@ -166,13 +166,12 @@ a:hover {
 }
 
 .share-button {
-    border-radius: 6px;
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     position: relative;
-    margin-top: -8px;
-    top: 8px;
+    margin-top: -6px;
+    top: 6px;
 }
 
 .share-button span {
@@ -195,26 +194,3 @@ a:hover {
     visibility: visible;
 }
 
-.share-email {
-    background-position: 0 0 !important;
-}
-
-.share-blogger {
-    background-position: -20px 0 !important;
-}
-
-.share-x {
-    background-position: -40px 0 !important;
-}
-
-.share-facebook {
-    background-position: -60px 0 !important;
-}
-
-.share-instagram {
-    background-position: -80px 0 !important;
-}
-
-.share-pinterest {
-    background-position: -100px 0 !important;
-}
