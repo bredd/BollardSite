@@ -166,31 +166,29 @@ a:hover {
 }
 
 .share-button {
+    border-radius: 6px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url(share_buttons_20_3.png) no-repeat left !important;
-    background-position: -20px 0 !important;
+    width: 32px;
+    height: 32px;
     position: relative;
-    top: 4px;
-}
-
-.share-button:hover {
-    background-position-y: -20px !important;
+    margin-top: -8px;
+    top: 8px;
 }
 
 .share-button span {
+    font-size: 0.65em;
     visibility: hidden;
-    background-color: black;
+    background-color: #444444;
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 3px 3px;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    top: -2.5em;
-    left: -5em;
-    width: 10em;
+    top: -3.5em;
+    left: -4.5em;
+    min-width: 6em;
+    min-height: 2em;
 }
 
 .share-button:hover span {
